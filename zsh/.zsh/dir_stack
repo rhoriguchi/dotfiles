@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+# Increase stack size of dirs
+DIRSTACKSIZE=20
+
+# Push old directory onto the directory stack automatically
+setopt auto_pushd
+
+# Do not push the same dir twice
+setopt pushd_ignore_dups

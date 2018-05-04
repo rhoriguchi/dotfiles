@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Keep 1000 lines of history within the shell and save it to $HOME/.history/bash
+HISTSIZE=1000
+SAVEHIST=$HISTSIZE
+HISTFILE=$HOME/.bash_history
+
+# Append history instead of overwriting
+shopt -s histappend
+
+# History format
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+
+# Don't save in histroy comands with
+export HISTIGNORE="ls:ps:history"

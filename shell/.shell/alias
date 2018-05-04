@@ -1,0 +1,7 @@
+alias 'sudo'='sudo'
+
+alias 'cls'='clear'
+alias 'ls'='ls --color'
+
+alias '..'='../'
+alias '.'='./'

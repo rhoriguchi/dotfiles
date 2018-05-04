@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# Coloring for ls
+[[ -f "$HOME/.dircolors" ]] && eval $(dircolors "$HOME/.dircolors") || eval $(dircolors)
+
+export TERM="xterm-256color"
+
+if [ -f $HOME/powerlevel9k/powerlevel9k.zsh-theme ]; then
+    source $HOME/powerlevel9k/powerlevel9k.zsh-theme
+else
+    echo "Error: loding $HOME/powerlevel9k/powerlevel9k.zsh-theme"
+fi

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Match case-insensitive on filename expansion
+shopt -s nocaseglob;
+
+# Autocorrect minor typos on `cd`-ing
+shopt -s cdspell;
+
+# cd into directory by just enter directory name (e.g. `Music` expands to `cd ./Music`)
+shopt -s autocd
+
+# Make Tab autocomplete regardless of filename case
+bind "set completion-ignore-case on"
+
+# List all matches in case multiple possible completions are possible
+bind "set show-all-if-ambiguous on"
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+bind "set mark-symlinked-directories on"
+
+# Show all autocomplete results at once
+bind "set page-completions off"
+
+# If there are more than 200 possible completions for a word, ask to show them all
+bind "set completion-query-items 200"
+
+# Show extra file information when completing, like `ls -F` does
+bind "set visible-stats on"
+
+# Be more intelligent when autocompleting by also looking at the text after the cursor
+bind "set skip-completed-text on"

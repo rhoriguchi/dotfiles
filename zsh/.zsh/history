@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+# Keep 1000 lines of history within the shell and save it to $HOME/.history/zsh
+HISTSIZE=1000
+SAVEHIST=$HISTSIZE
+HISTFILE=$HOME/.zsh_history
+
+# Append history instead of overwriting
+setopt appendhistory
+
+# Save each command's beginning timestamp and duration
+setopt extended_history
+
+# Increment history number automatically
+setopt inc_append_history

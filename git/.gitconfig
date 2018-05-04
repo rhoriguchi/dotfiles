@@ -1,0 +1,22 @@
+[user]
+	name = Ryan Horiguchi
+	email = ryan.horiguchi@gmail.com
+	username = rhoriguchi
+[github]
+	user = rhoriguchi
+[gitflow "prefix"]
+	feature = feature/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag = v
+[credential]
+	helper = store
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore-global
+[color]
+    diff = auto
+    status = auto
+    ui = auto
