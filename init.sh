@@ -3,12 +3,15 @@
 cd ~/.dotfiles
 
 echo "Creating symlinks"
-stow -R bash
-stow -R dircolors
-stow -R shell
-stow -R ssh
-stow -R zsh
-stow -R git
+stow -R --adopt bash
+stow -R --adopt dircolors
+stow -R --adopt shell
+stow -R --adopt ssh
+stow -R --adopt zsh
+stow -R --adopt git
+
+echo "Reset git repo"
+git reset --hard
 
 if [ ! -d $HOME/powerlevel9k ]; then
     echo "Cloning https://github.com/bhilburn/powerlevel9k.git to $HOME/powerlevel9k"
