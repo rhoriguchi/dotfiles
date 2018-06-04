@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/dotfiles
+cd ~/.dotfiles
 
 echo "Creating symlinks"
 stow -R bash

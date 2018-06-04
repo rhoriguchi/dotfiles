@@ -7,13 +7,13 @@ sudo apt-get install git stow
 
 ## Setup
 ```bash
-git clone https://github.com/rhoriguchi/dotfiles.git ~/dotfiles
+git clone https://github.com/rhoriguchi/dotfiles.git ~/.dotfiles
 ```
 
 ## Activate
 ```bash
-sudo chmod +x ~/dotfiles/init.sh
-~/dotfiles/init.sh
+sudo chmod +x ~/.dotfiles/init.sh
+~/.dotfiles/init.sh
 ```
 
 ## Create .git-credentials
