@@ -8,8 +8,14 @@ HISTFILE=$HOME/.bash_history
 # Append history instead of overwriting
 shopt -s histappend
 
+# Save commands as soon as it get's executed
+PROMPT_COMMAND='history -a'
+
 # History format
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 
 # Don't save in histroy comands with
 export HISTIGNORE="ls:ps:history"
+
+# Don't add a new history entry when same code get's executed in succesion
+export HISTCONTROL="ignoredups"
