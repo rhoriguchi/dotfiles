@@ -26,7 +26,9 @@ for file in "$HOME/.shell/"{alias,export}; do
   fi
 done
 
-# -- Completion --
+# -------------------------------------------------------------------
+# Completion
+# -------------------------------------------------------------------
 
 # Match case-insensitive on filename expansion
 shopt -s nocaseglob;
@@ -58,7 +60,9 @@ bind "set visible-stats on"
 # Be more intelligent when autocompleting by also looking at the text after the cursor
 bind "set skip-completed-text on"
 
-# -- History --
+# -------------------------------------------------------------------
+# History
+# -------------------------------------------------------------------
 
 # Keep 1000 lines of history within the shell and save it to $HOME/.bash_history
 HISTSIZE=1000
