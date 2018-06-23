@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Keep 1000 lines of history within the shell and save it to $HOME/.history/zsh
+# Keep 1000 lines of history within the shell and save it to $HOME/.zsh_history
 HISTSIZE=1000
 SAVEHIST=$HISTSIZE
 HISTFILE=$HOME/.zsh_history
