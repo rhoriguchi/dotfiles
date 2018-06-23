@@ -2,3 +2,32 @@
 
 # Coloring for ls
 [[ -f "$HOME/.dircolors" ]] && eval $(dircolors "$HOME/.dircolors") || eval $(dircolors)
+
+# -------------------------------------------------------------------
+# Turn on color
+# -------------------------------------------------------------------
+
+autoload -U colors && colors
+export TERM="xterm-256color"
+
+# -------------------------------------------------------------------
+# PROMPT var, left side
+# -------------------------------------------------------------------
+
+local current_user="%{$fg[magenta]%}$USER%{$reset_color%}"
+local root="%{$fg[red]%}root%{$reset_color%}"
+local user_string="%(!.${root}.${current_user})"
+
+local hostname="%{$fg[magenta]%}%M%{$reset_color%}"
+local path_string="%{$fg[green]%}%~%{$reset_color%}"
+local prompt_string=">"
+
+PROMPT="${user_string}@${hostname} ${path_string} ${prompt_string} %{$reset_color%}"
+
+# -------------------------------------------------------------------
+# RPROMPT var, right side
+# -------------------------------------------------------------------
+
+local time="%D{%H:%M:%S}"
+
+RPROMPT="${time}"
