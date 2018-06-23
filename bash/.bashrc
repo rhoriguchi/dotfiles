@@ -22,7 +22,7 @@ for file in "$HOME/.shell/"{alias,export}; do
   if [ -f $file ]; then
       source $file
   else
-      echo "Error: loding $file"
+      echo "Error: loading $file"
   fi
 done
 
