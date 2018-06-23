@@ -28,6 +28,14 @@ PROMPT="${user_string}@${hostname} ${path_string} ${prompt_string} %{$reset_colo
 # RPROMPT var, right side
 # -------------------------------------------------------------------
 
+# Load zsh-git-prompt
+file="$HOME/.zsh/zsh-git-prompt/zshrc.sh"
+if [ -f $file ]; then
+    source $file
+else
+    echo "Error: loading $file"
+fi
+
 local time="%D{%H:%M:%S}"
 
-RPROMPT="${time}"
+RPROMPT="$(git_super_status) ${time}"
