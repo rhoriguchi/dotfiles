@@ -1,2 +1,5 @@
 _SYNCAPP/
+
 .ssh/known_hosts
+
+.idea/
