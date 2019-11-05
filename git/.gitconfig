@@ -9,7 +9,6 @@
 	release = release/
 	hotfix = hotfix/
 	support = support/
-	versiontag = v
 [credential]
 	helper = store
 [push]
@@ -20,3 +19,5 @@
     diff = auto
     status = auto
     ui = auto
+[feature]
+    manyFiles = true
