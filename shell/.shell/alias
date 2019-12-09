@@ -5,3 +5,5 @@ alias 'ls'='ls --color'
 
 alias '..'='../'
 alias '.'='./'
+
+alias 'pip'='pip3'

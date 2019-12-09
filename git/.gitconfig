@@ -2,6 +2,7 @@
 	name = Ryan Horiguchi
 	email = ryan.horiguchi@gmail.com
 	username = rhoriguchi
+	signingKey = ""
 [github]
 	user = rhoriguchi
 [gitflow "prefix"]
@@ -21,3 +22,9 @@
     ui = auto
 [feature]
     manyFiles = true
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false
