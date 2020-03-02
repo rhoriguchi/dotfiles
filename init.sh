@@ -5,10 +5,11 @@ cd ~/.dotfiles
 echo "Creating symlinks"
 stow -R --adopt bash
 stow -R --adopt dircolors
+stow -R --adopt git
+stow -R --adopt nano
 stow -R --adopt shell
 stow -R --adopt ssh
 stow -R --adopt zsh
-stow -R --adopt git
 
 echo "Reset git repo"
 git reset --hard
