@@ -7,6 +7,7 @@ stow -R --adopt bash
 stow -R --adopt dircolors
 stow -R --adopt git
 stow -R --adopt nano
+stow -R --adopt neofetch
 stow -R --adopt shell
 stow -R --adopt ssh
 stow -R --adopt zsh
