@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd ~/.dotfiles
-
 echo "Creating symlinks"
+
 stow -R --adopt bash
 stow -R --adopt dircolors
 stow -R --adopt git
