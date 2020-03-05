@@ -1,30 +1,24 @@
 # dotfiles
 
-## Install dependencies
+## Install git and stow
 
 ```bash
-sudo apt-get install git stow
+sudo apt install git stow -y
 ```
 
 ## Setup
 
 ```bash
 git clone https://github.com/rhoriguchi/dotfiles.git ~/.dotfiles
-```
 
-## Activate
-
-```bash
 sudo chmod +x ~/.dotfiles/init.sh
 ~/.dotfiles/init.sh
 ```
 
 ## Create .git-credentials
 
-Create git credential file and write single line and replace `PASSWORD` with git password
+Replace `USERNAME` with git username and `PASSWORD` with git password
 
 ```bash
-nano ~/.git-credentials
+echo 'https://USERNAME:PASSWORD@github.com' > ~/.git-credentials
 ```
-
-=> `https://rhoriguchi:PASSWORD@github.com`
