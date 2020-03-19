@@ -1,7 +1,7 @@
 alias 'sudo'='sudo'
 
 alias 'cls'='clear'
-alias 'ls'='ls --color'
+alias 'ls'='ls --color -Ah'
 
 alias '..'='../'
 alias '.'='./'
