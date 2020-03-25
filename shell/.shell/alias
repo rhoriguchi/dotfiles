@@ -10,5 +10,3 @@ alias 'pip'='pip3'
 alias 'python'='python3'
 
 alias 'neo'='neofetch'
-
-alias 'gotop'='gotop --percpu'
