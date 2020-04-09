@@ -1,4 +1,4 @@
-alias 'sudo'='sudo'
+alias 'sudo'='sudo '
 
 alias 'cls'='clear'
 alias 'ls'='ls --color -Ah'
@@ -10,3 +10,5 @@ alias 'pip'='pip3'
 alias 'python'='python3'
 
 alias 'neo'='neofetch'
+
+alias 'open'='nautilus $PWD'
