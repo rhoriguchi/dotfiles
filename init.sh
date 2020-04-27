@@ -13,7 +13,7 @@ stow -R --adopt ssh
 stow -R --adopt zsh
 
 echo "Reset git repo"
-git reset --hard
+pushd ~/.dotfiles && git reset --hard && popd
 
 echo "Add includes for nano syntax highlighting"
 echo "\n" >> ~/.nanorc
