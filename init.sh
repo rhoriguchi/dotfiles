@@ -16,7 +16,7 @@ echo "Reset git repo"
 pushd ~/.dotfiles && git reset --hard && popd
 
 echo "Add includes for nano syntax highlighting"
-echo "\n" >> ~/.nanorc
+printf "\n" >> ~/.nanorc
 find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; | sort >> ~/.nanorc
 
 echo "Changing permissions for .shh"
