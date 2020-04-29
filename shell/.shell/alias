@@ -12,3 +12,5 @@ alias 'python'='python3'
 alias 'neo'='neofetch'
 
 alias 'open'='nautilus $PWD'
+
+alias 'kqgis'='pkill -9 qgis.bin'
