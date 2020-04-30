@@ -36,6 +36,4 @@ else
     echo "Error: loading $file"
 fi
 
-local time="%D{%H:%M:%S}"
-
-RPROMPT="$(git_super_status) ${time}"
+RPROMPT="$(git_super_status)"
