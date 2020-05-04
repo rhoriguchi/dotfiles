@@ -2,6 +2,7 @@
 
 echo "Creating symlinks"
 
+stow -R --adopt alacritty
 stow -R --adopt bash
 stow -R --adopt dircolors
 stow -R --adopt git
