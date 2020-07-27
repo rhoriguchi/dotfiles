@@ -9,8 +9,6 @@ alias '.'='./'
 alias 'pip'='pip3'
 alias 'python'='python3'
 
-alias 'neo'='neofetch'
+alias 'neo'='echo ""; echo ""; neofetch'
 
 alias 'open'='nautilus $PWD'
-
-alias 'kqgis'='pkill -9 qgis.bin'
