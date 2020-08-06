@@ -1,21 +1,21 @@
 [user]
-	name = Ryan Horiguchi
-	email = ryan.horiguchi@gmail.com
-	username = rhoriguchi
-	signingKey = 5CC220FFA648E8A6C3D21D96CA7EE98D45A1132A
+    name = Ryan Horiguchi
+    email = ryan.horiguchi@gmail.com
+    username = rhoriguchi
+    signingKey = 5CC220FFA648E8A6C3D21D96CA7EE98D45A1132A
 [github]
-	user = rhoriguchi
+    user = rhoriguchi
 [gitflow "prefix"]
-	feature = feature/
-	release = release/
-	hotfix = hotfix/
-	support = support/
+    feature = feature/
+    release = release/
+    hotfix = hotfix/
+    support = support/
 [credential]
-	helper = store
+    helper = store
 [push]
-	default = simple
+    default = simple
 [core]
-	excludesfile = ~/.gitignore-global
+    excludesfile = ~/.gitignore-global
 [color]
     diff = auto
     status = auto
@@ -23,10 +23,10 @@
 [feature]
     manyFiles = true
 [gpg]
-	program = gpg
+    program = gpg
 [commit]
-	gpgSign = true
+    gpgSign = true
 [tag]
-	forceSignAnnotated = true
+    forceSignAnnotated = true
 [init]
-	defaultBranch = master
+    defaultBranch = master
