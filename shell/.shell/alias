@@ -3,9 +3,6 @@ alias 'sudo'='sudo '
 alias 'cls'='clear'
 alias 'ls'='ls --color -Ah'
 
-alias '..'='../'
-alias '.'='./'
-
 alias 'pip'='pip3'
 alias 'python'='python3'
 
