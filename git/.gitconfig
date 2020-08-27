@@ -16,6 +16,7 @@
     default = simple
 [core]
     excludesfile = ~/.gitignore-global
+    symlinks = true
 [color]
     diff = auto
     status = auto
